@@ -4,7 +4,7 @@
 
 You could use these built-ins straight into your templates. You could also check ![templates/main/builtins.html](/templates/main/builtins.html).
 
-[![screenshot_02](/images/screenshot_02.png)](#)
+![screenshot_02](/images/screenshot_02.png)
 
 ## Creating Your Own Context Processor
 
@@ -55,4 +55,4 @@ TEMPLATES = [
 
 You could refer to [templates/main/custom.html](/templates/main/custom.html) for using the context in your template. Your browser should look something like this.
 
-[![screenshot_01](/images/screenshot_01.png)](#)
+![screenshot_01](/images/screenshot_01.png)
