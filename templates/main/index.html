@@ -8,12 +8,12 @@
 
 <h1 class="mb-4">Welcome aboard!</h1>
 
-<p>Here's the list of Avengers near you...</p>
-
-<ul>
-    {% for real_name, avenger_name in avengers.items %}
-        <li>{{ real_name }} &mdash; {{ avenger_name }} </li>
-    {% endfor %}
-</ul>
+<p>
+    Feel free to explore this app to see examples of built-in and custom
+    context processors in Django. If you would like to see the example for
+    custom context processors, go <a href="{% url 'main:custom' %}">here</a>.
+    However, you could opt to check <a href="{% url 'main:builtins' %}">
+    examples for built-in context processors.</a>
+</p>
 
 {% endblock %}

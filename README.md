@@ -1,5 +1,10 @@
 # Playing with Django Context Processors
 
+## Built-in Context Processors
+
+You could use these built-ins straight into your templates. You could also check ![templates/main/builtins.html](/templates/main/builtins.html).
+
+![screenshot_02](/images/screenshot_02.png)
 
 ## Creating Your Own Context Processor
 
@@ -48,6 +53,6 @@ TEMPLATES = [
 ]
 ```
 
-You could refer to [templates/main/index.html](/templates/main/index.html) for using the context in your template. Your browser should look something like this.
+You could refer to [templates/main/custom.html](/templates/main/custom.html) for using the context in your template. Your browser should look something like this.
 
 ![screenshot_01](/images/screenshot_01.png)

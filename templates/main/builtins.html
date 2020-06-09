@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Built-in Context Processors {% endblock %}
+
+
+{% block content %}
+
+<h1 class="mb-4">Built-in Context Processors in Django</h1>
+
+<h2 class="mt-5 mb-4">Debug</h2>
+
+<p>The value of <code>debug</code> is &mdash; {{ debug }}.</p>
+<p>The value of <code>sql_queries</code> is &mdash; {{ sql_queries }}.</p>
+
+
+<h2 class="mt-5 mb-4">Request</h2>
+
+<p>The value of <code>request.GET</code> is &mdash; {{ request.GET }}.</p>
+<p>The value of <code>request.POST</code> is &mdash; {{ request.POST }}.</p>
+<p>The value of <code>request.COOKIES</code> is &mdash; {{ request.COOKIES }}.</p>
+<p>The value of <code>request.CONTENT_TYPE</code> is &mdash;
+    {{ request.CONTENT_TYPE }}.</p>
+<p>The value of <code>request.META</code> is &mdash;
+    <pre class="pre-scrollable">{{ request.META | pprint }}</pre>.</p>
+<p>The value of <code>request.REMOTE_ADDR</code> is &mdash;
+    {{ request.REMOTE_ADDR }}.</p>
+
+
+<h2 class="mt-5 mb-4">Auth</h2>
+
+<p>The value of <code>user</code> is &mdash; {{ user }}.</p>
+<p>The value of <code>perms</code> is &mdash; {{ perms }}.</p>
+
+<h2 class="mt-5 mb-4">Messages</h2>
+
+<p>The value of <code>messages</code> is &mdash; {{ messages  }}.</p>
+<p>The value of <code>DEFAULT_MESSAGE_LEVELS</code> is &mdash;
+    {{ DEFAULT_MESSAGE_LEVELS }}.</p>
+
+{% endblock %}

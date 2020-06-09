@@ -6,9 +6,16 @@
     </title>
 
     {% include 'partials/library_includes.html' %}
+
+    <style type="text/css">
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
-    <div class="container my-5 px-5">
+    {% include 'partials/navbar.html' %}
+    <div class="container p-5">
         {% block content %}
         {% endblock %}
     </div>
