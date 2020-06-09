@@ -6,6 +6,14 @@
 
 {% block content %}
 
-<h1>Hello, World!</h1>
+<h1 class="mb-4">Welcome aboard!</h1>
+
+<p>Here's the list of Avengers near you...</p>
+
+<ul>
+    {% for real_name, avenger_name in avengers.items %}
+        <li>{{ real_name }} &mdash; {{ avenger_name }} </li>
+    {% endfor %}
+</ul>
 
 {% endblock %}
